@@ -12,8 +12,20 @@
     --sTPB: #{rem(19)};
   }
 
-  &__table{
+  &__table-wrap{
 
+    @include media-breakpoint-down(md){
+      //padding: 0 15px 0 0;
+      width: 100%;
+      overflow-x: auto;
+    }
+  }
+  &__table{
+    @include media-breakpoint-down(md){
+      padding: 0 7.5px;
+      width: 900px;
+      //overflow-x: auto;
+    }
   }
   &__tr{
     padding: rem(24) 0;

@@ -4,132 +4,133 @@ mixin sPrices(data)
 		.container
 			+b.section-title
 				h2 Цены
-			+e.table
-				+e.tr--head
-					+e.tr-row.row
-						.col-md-4
-							+e.title
-								h4 Начинающие
-								p
-									| Для детей от 5 до 8
-									|
-									br.d-none.d-xl-block
-									| лет не имеющих опыт
-									|
-									br.d-none.d-xl-block
-									| в карате
-						.col-md-4
-							+e.title
-								h4 Средняя команда
-								p Для детей 8-10 лет имеющих опыт в карате 1-2 года и для детей 8-12 лет не имеющих опыта в карате
-						.col-md-4
-							+e.title
-								h4 Старшая команда
-								p
-									| Для детей старше 10 лет
-									|
-									br.d-none.d-xl-block
-									|и имеющих опыт в карате
-				//-
-				+sPricesTr()
-					.col-md-4
-						+e.mob-title.d-md-none Начинающие
-						+e.txt
-							| Пробный урок -
-							|
-							b бесплатно
-					.col-md-4
-						+e.mob-title.d-md-none Средняя команда
-						+e.txt
-							| Пробный урок -
-							|
-							b бесплатно
-					.col-md-4
-						+e.mob-title.d-md-none Старшая команда
-						+e.txt
-							| Пробный урок -
-							|
-							b бесплатно
-				//-
-				+sPricesTr()
-					.col-md-4
-						+e.mob-title.d-md-none Начинающие
-						+e.txt
-							b 8
-							|
-							| занятий в месяц
-					.col-md-4
-						+e.mob-title.d-md-none Средняя команда
-						+e.txt
-							b 8
-							|
-							| занятий в месяц
-					.col-md-4
-						+e.mob-title.d-md-none Старшая команда
-						+e.txt
-							b 8
-							|
-							| занятий в месяц
-				//-
-				+sPricesTr()
-					.col-md-4
-						+e.mob-title.d-md-none Начинающие
-						+e.txt
-							b 2
-							|
-							| раза в неделю
-					.col-md-4
-						+e.mob-title.d-md-none Средняя команда
-						+e.txt
-							b 2
-							|
-							| раза в неделю
-					.col-md-4
-						+e.mob-title.d-md-none Старшая команда
-						+e.txt
-							b 2
-							|
-							| раза в неделю
-				//-
-				+sPricesTr()
-					.col-md-4
-						+e.mob-title.d-md-none Начинающие
-						+e.txt
-							| Продолжительность
-							br
-							| тренировки
-							|
-							b 45 минут
-					.col-md-4
-						+e.mob-title.d-md-none Средняя команда
-						+e.txt
-							| Продолжительность
-							br
-							| тренировки
-							|
-							b 75 минут
-					.col-md-4
-						+e.mob-title.d-md-none Старшая команда
-						+e.txt
-							| Продолжительность
-							br
-							| тренировки
-							|
-							b 90 минут
-				//-
-				+sPricesTr()
-					.col-md-4
-						+e.mob-title.d-md-none Начинающие
-						+e.price 4500 р
-						+e.month в месяц
-					.col-md-4
-						+e.mob-title.d-md-none Средняя команда
-						+e.price 5000 р
-						+e.month в месяц
-					.col-md-4
-						+e.mob-title.d-md-none Старшая команда
-						+e.price 5500 р
-						+e.month в месяц
+			+e.table-wrap
+				+e.table
+					+e.tr--head
+						+e.tr-row.row
+							.col-4
+								+e.title
+									h4 Начинающие
+									p
+										| Для детей от 5 до 8
+										|
+										br.d-none.d-xl-block
+										| лет не имеющих опыт
+										|
+										br.d-none.d-xl-block
+										| в карате
+							.col-4
+								+e.title
+									h4 Средняя команда
+									p Для детей 8-10 лет имеющих опыт в карате 1-2 года и для детей 8-12 лет не имеющих опыта в карате
+							.col-4
+								+e.title
+									h4 Старшая команда
+									p
+										| Для детей старше 10 лет
+										|
+										br.d-none.d-xl-block
+										|и имеющих опыт в карате
+					//-
+					+sPricesTr()
+						.col-4
+							//-+e.mob-title.d-md-none Начинающие
+							+e.txt
+								| Пробный урок -
+								|
+								b бесплатно
+						.col-4
+							//-+e.mob-title.d-md-none Средняя команда
+							+e.txt
+								| Пробный урок -
+								|
+								b бесплатно
+						.col-4
+							//-+e.mob-title.d-md-none Старшая команда
+							+e.txt
+								| Пробный урок -
+								|
+								b бесплатно
+					//-
+					+sPricesTr()
+						.col-4
+							//-+e.mob-title.d-md-none Начинающие
+							+e.txt
+								b 8
+								|
+								| занятий в месяц
+						.col-4
+							//-+e.mob-title.d-md-none Средняя команда
+							+e.txt
+								b 8
+								|
+								| занятий в месяц
+						.col-4
+							//-+e.mob-title.d-md-none Старшая команда
+							+e.txt
+								b 8
+								|
+								| занятий в месяц
+					//-
+					+sPricesTr()
+						.col-4
+							//-+e.mob-title.d-md-none Начинающие
+							+e.txt
+								b 2
+								|
+								| раза в неделю
+						.col-4
+							//-+e.mob-title.d-md-none Средняя команда
+							+e.txt
+								b 2
+								|
+								| раза в неделю
+						.col-4
+							//-+e.mob-title.d-md-none Старшая команда
+							+e.txt
+								b 2
+								|
+								| раза в неделю
+					//-
+					+sPricesTr()
+						.col-4
+							//-+e.mob-title.d-md-none Начинающие
+							+e.txt
+								| Продолжительность
+								br
+								| тренировки
+								|
+								b 45 минут
+						.col-4
+							//-+e.mob-title.d-md-none Средняя команда
+							+e.txt
+								| Продолжительность
+								br
+								| тренировки
+								|
+								b 75 минут
+						.col-4
+							//-+e.mob-title.d-md-none Старшая команда
+							+e.txt
+								| Продолжительность
+								br
+								| тренировки
+								|
+								b 90 минут
+					//-
+					+sPricesTr()
+						.col-4
+							//-+e.mob-title.d-md-none Начинающие
+							+e.price 4500 р
+							+e.month в месяц
+						.col-4
+							//-+e.mob-title.d-md-none Средняя команда
+							+e.price 5000 р
+							+e.month в месяц
+						.col-4
+							//-+e.mob-title.d-md-none Старшая команда
+							+e.price 5500 р
+							+e.month в месяц
 	// end sPrices
 
 mixin sPricesTr()

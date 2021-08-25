@@ -1,4 +1,4 @@
-$default-font: "roboto";
+$default-font: "Gilroy";
 // $file-form: ($file-formats: woff2 woff ttf);
 $addr: '../fonts/';
 $file-format: woff2;
@@ -6,10 +6,13 @@ $file-format: woff2;
 
 // If font from googlefont, next lines remove
 
-@include font-face ($default-font, $addr + "Roboto-Regular/Roboto-Regular", $file-formats: $file-format);
-@include font-face ($default-font, $addr + "Roboto-Bold/Roboto-Bold", bold, $file-formats: $file-format);
-@include font-face ($default-font, $addr + "Roboto-Medium/Roboto-Medium", 500, $file-formats: $file-format);
-@include font-face ($default-font, $addr + "Roboto-Black/Roboto-Black", 900, $file-formats: $file-format);
+@include font-face ($default-font, $addr + "Gilroy-Light/Gilroy-Light", 300, $file-formats: $file-format);
+@include font-face ($default-font, $addr + "Gilroy-Regular/Gilroy-Regular", 400, $file-formats: $file-format);
+@include font-face ($default-font, $addr + "Gilroy-Medium/Gilroy-Medium", 500, $file-formats: $file-format);
+@include font-face ($default-font, $addr + "Gilroy-SemiBold/Gilroy-SemiBold", 600, $file-formats: $file-format);
+@include font-face ($default-font, $addr + "Gilroy-Bold/Gilroy-Bold", 700, $file-formats: $file-format);
+@include font-face ($default-font, $addr + "Gilroy-ExtraBold/Gilroy-ExtraBold", 800, $file-formats: $file-format);
+@include font-face ($default-font, $addr + "Gilroy-Black/Gilroy-Black", 900, $file-formats: $file-format);
 
 // font-weight helper:
 // 100 Thin

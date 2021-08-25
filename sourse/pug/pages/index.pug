@@ -1,31 +1,29 @@
 extends layout/main.pug
 
 
-include ../blocks/sContent/_sContent.pug
-include ../blocks/sContact/_sContact.pug
-include ../blocks/sTEst00/_sTEst00.pug
+include ../blocks/sPrices/_sPrices.pug
+include ../blocks/sShedule/_sShedule.pug
 
 block variables
-	- let  mainPage= 'main-page' 
-	- let  bg= null
+	- let  mainPage= 'main-page'
+	- let  bg= '01.png'
 
 block title
 	- let  title= 'title'
 	title= title
-block pagecontent 
-	a.link-modal-js(href="#modal-call") sadasdsa 
-	a.link-modal-js(href="#modal-call") sadasdsa 
-	+mob-mnu()
-	+icon("telegram")
-	+header()
-	+top-nav()
-	
-	+topLine()
-	+headerBlock()
-	+sForm()
-	+sContact()
-	+footer()
-      
-
-
-
+block pagecontent
+	+b.header-img
+		img(loading="lazy" src="img/@2x/header-img.png" alt="")
+	+sPrices()
+	+sShedule()
+	//a.link-modal-js(href="#modal-call") sadasdsa
+	//a.link-modal-js(href="#modal-call") sadasdsa
+	//+mob-mnu()
+	//+icon("telegram")
+	//+header()
+	//+top-nav()
+	//+topLine()
+	//+headerBlock()
+	//+sForm()
+	//+sContact()
+	//+footer()

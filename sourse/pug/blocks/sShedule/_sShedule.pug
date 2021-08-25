@@ -1,0 +1,87 @@
+mixin sShedule(data)
+	// start sShedule
+	+b.SECTION.sShedule.section#sShedule&attributes(attributes)
+		+e.bg
+			img(loading="lazy" src="img/@2x/sShedule-bg.png" alt="")
+		.container
+			+b.section-title
+				h2 Расписание
+			+e.boxes
+				+sSheduleBox(`Северное <br> Бутово`)
+					+sSheduleCol('Вторник, Воскресенье')
+						+sSheduleData({
+							team: 'Младшая команда',
+							time: '18:00-18:45',
+							gray: 'Фитнес клуб Спорт Вариант | ул. Грина, 7Б. ',
+						})
+						+sSheduleData({
+							team: 'Старшая команда',
+							time: '18:00-19:30',
+							gray: 'Фитнес клуб Спорт Вариант | ул. Грина, 7Б. ',
+						})
+					+sSheduleCol('Воскресенье')
+						+sSheduleData({
+							team: 'Младшая команда',
+							time: '15:30-16:15',
+							gray: 'Фитнес клуб Спорт Вариант | ул. Грина, 7Б. ',
+						})
+						+sSheduleData({
+							team: 'Старшая команда',
+							time: '15:30-17:00',
+							gray: 'Фитнес клуб Спорт Вариант | ул. Грина, 7Б. ',
+						})
+				+sSheduleBox(`Южное <br> Бутово`)
+					+sSheduleCol('Четверг')
+						+sSheduleData({
+							team: 'Младшая команда',
+							time: '18:00-18:45',
+							gray: 'ФОК “Изумрудный” | Южнобутовская улица, 96',
+						})
+						+sSheduleData({
+							team: 'Средняя команда',
+							time: '18:00-18:45',
+							gray: 'Фитнес Гуру | Адмирала Руднева, 4',
+						})
+						+sSheduleData({
+							team: 'Старшая команда',
+							time: '20:00-21:30',
+							gray: 'ФОК “Изумрудный” | Южнобутовская улица, 96',
+						})
+					+sSheduleCol('Воскресенье')
+						+sSheduleData({
+							team: 'Младшая команда',
+							time: '17:45-18:30',
+							gray: 'ФОК “Изумрудный” | Южнобутовская улица, 96',
+						})
+						+sSheduleData({
+							team: 'Средняя команда',
+							time: '18:30-19:45',
+							gray: 'ФОК “Изумрудный” | Южнобутовская улица, 96',
+						})
+						+sSheduleData({
+							team: 'Старшая команда',
+							time: '19:45-21:15',
+							gray: 'ФОК “Изумрудный” | Южнобутовская улица, 96',
+						})
+	// end sShedule
+
+mixin sSheduleBox(title)
+	+e.box
+		+e.b-row.row
+			+e.title-col.col-lg-4!=title
+			block
+
+mixin sSheduleCol(title)
+	.col-md-6.col-lg-4
+		+e.s-item
+			+e.title=title
+			+e.items
+				block
+
+mixin sSheduleData(data)
+	+e.item
+		+e.item-row.row.align-items-center
+			+e.team-col.col-sm=data.team
+			.col-sm-auto
+				+e.time=data.time
+			+e.gray-col.col-12=data.gray

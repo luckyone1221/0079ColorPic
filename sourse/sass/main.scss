@@ -107,8 +107,15 @@ $output-bourbon-deprecation-warnings: false;
 @import "./node_modules/bootstrap/scss/mixins";
 
 // Layout & components
-@import "./node_modules/bootstrap/scss/root";
-@import "./node_modules/bootstrap/scss/reboot";
+//-@import "./node_modules/bootstrap/scss/root";
+//@import "./node_modules/bootstrap/scss/reboot";
+
+//!!! remove style from body in main.pug
+body{
+  box-sizing: border-box;
+  margin: 0;
+  //-font-family: $default;
+}
 
 .boot-inside{
   @import "./node_modules/bootstrap/scss/utilities";
@@ -118,10 +125,13 @@ $output-bourbon-deprecation-warnings: false;
   @import "./node_modules/bootstrap/scss/forms";
   @import "./node_modules/bootstrap/scss/buttons";
   //
-  @import "./node_modules/bootstrap/scss/helpers";
-  @import "./node_modules/bootstrap/scss/type";
+  //@import "./node_modules/bootstrap/scss/helpers";
 
   @import "./node_modules/bootstrap/scss/utilities/api";
+
+  *{
+    box-sizing: border-box;
+  }
 }
 
 .section {

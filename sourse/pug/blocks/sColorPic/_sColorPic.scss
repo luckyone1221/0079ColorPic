@@ -1,5 +1,7 @@
 // start .sColorPic
 .sColorPic {
+	//width: 100%;
+	//overflow: hidden;
 	//
 	.section-title{
 
@@ -109,15 +111,11 @@
 			display: block;
 
 			@include mt();
-			margin: 0 auto rem(12) auto;
-			width: rem(40);
-			height: rem(40);
-			@include media-breakpoint-up(md){
-				margin: 0 auto rem(20) auto;
-				width: rem(50);
-				height: rem(50);
-			}
+			margin: 0 auto rem(14) auto;
+			width: rem(60);
+			height: rem(60);
 			@include media-breakpoint-up(xl){
+				margin: 0 auto rem(20) auto;
 				width: rem(72);
 				height: rem(72);
 			}

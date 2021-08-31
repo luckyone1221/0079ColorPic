@@ -154,6 +154,7 @@ function eventHandler() {
 		btn.addEventListener('click', function (){
 			mergeImages(mergeArr)
 				.then((generatedImg) => {
+
 					let a = document.createElement('a');
 					a.style.display = 'none';
 					a.href = generatedImg;

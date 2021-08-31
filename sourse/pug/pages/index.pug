@@ -3,6 +3,7 @@ extends layout/main.pug
 
 include ../blocks/sPrices/_sPrices.pug
 include ../blocks/sShedule/_sShedule.pug
+include ../blocks/sColorPic/_sColorPic.pug
 
 block variables
 	- let  mainPage= 'main-page'
@@ -12,7 +13,4 @@ block title
 	- let  title= 'title'
 	title= title
 block pagecontent
-	+b.header-img
-		img(loading="lazy" src="img/@2x/header-img.png" alt="")
-	+sPrices()
-	+sShedule()
+	+sColorPic()

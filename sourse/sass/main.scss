@@ -100,60 +100,29 @@ $output-bourbon-deprecation-warnings: false;
 //@import "root";
 //@import "base";
 
-@import "./node_modules/bootstrap/scss/mixins/breakpoints";
-$grid-breakpoints: (xs: 0,
-  sm: 576px,
-  md: 768px,
-  lg: 992px,
-  xl: 1200px,
-  xxl: 1400px) !default;
+//-
+@import "./node_modules/bootstrap/scss/functions";
+@import "vars";
+@import "./node_modules/bootstrap/scss/variables";
+@import "./node_modules/bootstrap/scss/mixins";
 
-//base
-$black: #000;
-$white: #fff;
-$red: #B5060B;
-.pixel-perfect {
-  top: 0;
-  display: block;
-  @include a-cent(x);
-  pointer-events: none;
-  z-index: 1000;
-  overflow: hidden;
-  width: 100%;
-  height: 300%;
-  background-position: center 0;
-  opacity: 0;
-  //opacity: 0.7;
+// Layout & components
+@import "./node_modules/bootstrap/scss/root";
+@import "./node_modules/bootstrap/scss/reboot";
+
+.boot-inside{
+  @import "./node_modules/bootstrap/scss/utilities";
+  //
+  @import "./node_modules/bootstrap/scss/containers";
+  @import "./node_modules/bootstrap/scss/grid";
+  @import "./node_modules/bootstrap/scss/forms";
+  @import "./node_modules/bootstrap/scss/buttons";
+  //
+  @import "./node_modules/bootstrap/scss/helpers";
+  @import "./node_modules/bootstrap/scss/type";
+
+  @import "./node_modules/bootstrap/scss/utilities/api";
 }
-
-.section-title{
-  padding-bottom: var(--sTPB);
-  & > *:last-child{
-    margin-bottom: 0;
-  }
-
-  h2{
-    font-weight: bold;
-    line-height: calc(69/56);
-
-    font-size: rem(32);
-    @include media-breakpoint-up(md){
-      font-size: rem(56);
-    }
-    color: $black;
-  }
-}
-
-.row{
-  margin-top: calc(var(--bs-gutter-y, 0px) * -1);
-
-  & > *{
-    margin-top: var(--bs-gutter-y, 0px);
-    padding-left: calc(var(--bs-gutter-x,30px) / 2) !important;
-    padding-right: calc(var(--bs-gutter-x,30px) / 2) !important;
-  }
-}
-
 
 .section {
   @include bgs;
@@ -163,7 +132,8 @@ $red: #B5060B;
 
 //end base
 
-
+@import "root";
+@import "base";
 @import '../pug/blocks/**/*.scss';
 @import "media"; // Всегда в конце
 

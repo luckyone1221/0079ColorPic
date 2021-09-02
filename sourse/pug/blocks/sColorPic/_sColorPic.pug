@@ -7,20 +7,44 @@ mixin sColorPic(data)
 			+e.img-box.mb-5
 				+e.img
 					img.base-img-js(loading='lazy' src="img/@2x/sColorPic-img.png" alt="")
+				+sColorPicImg(4, 15)
+				+sColorPicImg(3, 5)
 				+sColorPicImg(1, 4)
 				+sColorPicImg(2, 2)
-				+sColorPicImg(3, 5)
-				+sColorPicImg(4, 15)
 			.row.gy-1.pb-2
 				.col-sm
 					.row.gy-3.pb-4
+						+sColorPicTabsBtn('Фасад')
+						+sColorPicTabsBtn('Кровля')
 						+sColorPicTabsBtn('Водосток', 'active')
 						+sColorPicTabsBtn('Доборы')
-						+sColorPicTabsBtn('Кровля')
-						+sColorPicTabsBtn('Фасад')
 				.col-sm-auto.d-none.d-md-block
 					+e.btn--download.download-btn-js(type="button") Скачать
 			+e.tabs-wrap.tabs__wrap.mb-4
+				+sColorPicTabsContent()
+					+sColorPicRadio('sColorPic-4', "#fcf9e6", 'Фасад 2661', 'walls-2661')(checked)
+					+sColorPicRadio('sColorPic-4', "#776f62", 'Фасад 2665', 'walls-2665')
+					+sColorPicRadio('sColorPic-4', "#ac8b66", 'Фасад 2672', 'walls-2672')
+					+sColorPicRadio('sColorPic-4', "#798474", 'Фасад 2680', 'walls-2680')
+
+					+sColorPicRadio('sColorPic-4', "#7a8f92", 'Фасад 2684', 'walls-2684')
+					+sColorPicRadio('sColorPic-4', "#868a7d", 'Фасад 2688', 'walls-2688')
+					+sColorPicRadio('sColorPic-4', "#fcfcfc", 'Фасад белый', 'walls-white')
+					+sColorPicRadio('sColorPic-4', "#867d6f", 'Фасад Т3012', 'walls-3012')
+
+					+sColorPicRadio('sColorPic-4', "#695247", 'Фасад Т3019', 'walls-3019')
+					+sColorPicRadio('sColorPic-4', "#838472", 'Фасад Т3027', 'walls-3027')
+					+sColorPicRadio('sColorPic-4', "#828a82", 'Фасад Т3031', 'walls-3031')
+					+sColorPicRadio('sColorPic-4', "#9e9f90", 'Фасад Т3037', 'walls-3037')
+					
+					+sColorPicRadio('sColorPic-4', "#a69d7e", 'Фасад Т3041', 'walls-3041')
+					+sColorPicRadio('sColorPic-4', "#51514f", 'Фасад Т3044', 'walls-3044')
+				+sColorPicTabsContent()
+					+sColorPicRadio('sColorPic-3', "#451c1e", 'Кровля RAL 3005', 'roof-1')(checked)
+					+sColorPicRadio('sColorPic-3', "#0c3a60", 'Кровля RAL 5005', 'roof-2')
+					+sColorPicRadio('sColorPic-3', "#30373a", 'Кровля RAL 7024', 'roof-3')
+					+sColorPicRadio('sColorPic-3', "#282224", 'Кровля RAL 8017', 'roof-4')
+					+sColorPicRadio('sColorPic-3', "#213820", 'Кровля RR-11', 'roof-5')
 				+sColorPicTabsContent('active')
 					+sColorPicRadio('sColorPic-1', "#2c362e", 'Водосток зеленый')(checked)
 					+sColorPicRadio('sColorPic-1', "#3c322c", 'Водосток коричневый')
@@ -29,30 +53,6 @@ mixin sColorPic(data)
 				+sColorPicTabsContent()
 					+sColorPicRadio('sColorPic-2', "#77655d", 'Доборы коричневые')(checked)
 					+sColorPicRadio('sColorPic-2', "#67696d", 'Доборы серые')
-				+sColorPicTabsContent()
-					+sColorPicRadio('sColorPic-3', "#451c1e", 'Кровля RAL 3005')(checked)
-					+sColorPicRadio('sColorPic-3', "#0c3a60", 'Кровля RAL 5005')
-					+sColorPicRadio('sColorPic-3', "#30373a", 'Кровля RAL 7024')
-					+sColorPicRadio('sColorPic-3', "#282224", 'Кровля RAL 8017')
-					+sColorPicRadio('sColorPic-3', "#213820", 'Кровля RR-11')
-				+sColorPicTabsContent()
-					+sColorPicRadio('sColorPic-4', "#fcf9e6", 'Фасад 2661')(checked)
-					+sColorPicRadio('sColorPic-4', "#776f62", 'Фасад 2665')
-					+sColorPicRadio('sColorPic-4', "#ac8b66", 'Фасад 2672')
-					+sColorPicRadio('sColorPic-4', "#798474", 'Фасад 2680')
-
-					+sColorPicRadio('sColorPic-4', "#7a8f92", 'Фасад 2684')
-					+sColorPicRadio('sColorPic-4', "#868a7d", 'Фасад 2688')
-					+sColorPicRadio('sColorPic-4', "#fcfcfc", 'Фасад белый')
-					+sColorPicRadio('sColorPic-4', "#867d6f", 'Фасад Т3012')
-
-					+sColorPicRadio('sColorPic-4', "#695247", 'Фасад Т3019')
-					+sColorPicRadio('sColorPic-4', "#838472", 'Фасад Т3027')
-					+sColorPicRadio('sColorPic-4', "#828a82", 'Фасад Т3031')
-
-					+sColorPicRadio('sColorPic-4', "#9e9f90", 'Фасад Т3037')
-					+sColorPicRadio('sColorPic-4', "#a69d7e", 'Фасад Т3041')
-					+sColorPicRadio('sColorPic-4', "#51514f", 'Фасад Т3044')
 			.d-md-none
 				+e.btn--download.download-btn-js(type="button") Скачать
 			//-h2 OutPut
@@ -66,12 +66,13 @@ mixin sColorPicTabsContent(addClasses)
 		.row.gy-3
 			block
 
-mixin sColorPicRadio(GroupName, color, txt)
+mixin sColorPicRadio(GroupName, color, txt, imgName)
 	+e.radio-col.col-4.col-md-2.col-xl-2
 		+e.LABEL.radio.text-center
 			input(type="radio" name=GroupName value=txt class="invisible img-radio-js")&attributes(attributes)
 			span.circle(style=`background-color: ${color}`)
-				img(loading="lazy" src="img/svg/check.svg" alt="")
+				if imgName
+					img(loading="lazy" src=`img/@2x/${imgName}.png` alt="")
 			+e.r-txt=txt
 
 mixin sColorPicTabsBtn(txt, addClasses)

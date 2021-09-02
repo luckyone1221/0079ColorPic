@@ -92,7 +92,7 @@
 
 		input:checked + .circle{
 			border: 2px solid $primary;
-			img{
+			&:after{
 				opacity: 1;
 			}
 		}
@@ -125,17 +125,29 @@
 			overflow: hidden;
 
 			position: relative;
-			img{
+			&:after{
 				@include mt();
 				opacity: 0;
 				content: '';
 				position: absolute;
+
 				top: 50%;
 				left: 50%;
 				transform: translateY(-50%) translateX(-50%);
+
 				width: 50%;
-				height: auto;
-				filter: drop-shadow(2px 1px 6px rgba(255, 255, 255, .7));
+				height: 50%;
+				background-image: url(../img/svg/check.svg);
+				background-repeat: no-repeat;
+				background-position: center;
+				background-size: contain;
+				//filter: drop-shadow(2px 1px 6px rgba(255, 255, 255, .1));
+			}
+
+			img{
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
 			}
 		}
 	}

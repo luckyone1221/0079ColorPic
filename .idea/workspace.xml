@@ -8,17 +8,10 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/css/main.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/main.min.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sourse/js/common.js" beforeDir="false" afterPath="$PROJECT_DIR$/sourse/js/common.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sourse/pug/blocks/mixin-wrap/_mixin-wrap.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sourse/pug/blocks/mixin-wrap/_mixin-wrap.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/readme.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sourse/pug/blocks/sColorPic/_sColorPic.pug" beforeDir="false" afterPath="$PROJECT_DIR$/sourse/pug/blocks/sColorPic/_sColorPic.pug" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sourse/pug/blocks/sColorPic/_sColorPic.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sourse/pug/blocks/sColorPic/_sColorPic.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sourse/pug/blocks/sPrices/_sPrices.pug" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sourse/pug/blocks/sPrices/_sPrices.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sourse/pug/blocks/sShedule/_sShedule.pug" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sourse/pug/blocks/sShedule/_sShedule.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sourse/pug/pages/index.pug" beforeDir="false" afterPath="$PROJECT_DIR$/sourse/pug/pages/index.pug" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sourse/pug/pages/layout/js-css.pug" beforeDir="false" afterPath="$PROJECT_DIR$/sourse/pug/pages/layout/js-css.pug" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sourse/pug/pages/layout/main.pug" beforeDir="false" afterPath="$PROJECT_DIR$/sourse/pug/pages/layout/main.pug" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sourse/sass/_fonts.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sourse/sass/_fonts.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sourse/sass/_base.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sourse/sass/_base.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sourse/sass/main.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sourse/sass/main.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -85,7 +78,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1630411889404</updated>
-      <workItem from="1630411890699" duration="21306000" />
+      <workItem from="1630411890699" duration="21862000" />
+      <workItem from="1630593975701" duration="1941000" />
     </task>
     <servers />
   </component>
@@ -102,5 +96,6 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>

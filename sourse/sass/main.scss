@@ -134,12 +134,6 @@ body{
   }
 }
 
-.section {
-  @include bgs;
-  padding-top: var(--sPT);
-  padding-bottom: var(--sPB);
-}
-
 //end base
 
 @import "root";

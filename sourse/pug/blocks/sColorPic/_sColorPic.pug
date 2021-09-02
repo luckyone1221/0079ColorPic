@@ -14,14 +14,14 @@ mixin sColorPic(data)
 			.row.gy-1.pb-2
 				.col-sm
 					.row.gy-3.pb-4
-						+sColorPicTabsBtn('Фасад')
+						+sColorPicTabsBtn('Фасад', 'active')
 						+sColorPicTabsBtn('Кровля')
-						+sColorPicTabsBtn('Водосток', 'active')
+						+sColorPicTabsBtn('Водосток')
 						+sColorPicTabsBtn('Доборы')
 				.col-sm-auto.d-none.d-md-block
 					+e.btn--download.download-btn-js(type="button") Скачать
 			+e.tabs-wrap.tabs__wrap.mb-4
-				+sColorPicTabsContent()
+				+sColorPicTabsContent('active')
 					+sColorPicRadio('sColorPic-4', "#fcf9e6", 'Фасад 2661', 'walls-2661')(checked)
 					+sColorPicRadio('sColorPic-4', "#776f62", 'Фасад 2665', 'walls-2665')
 					+sColorPicRadio('sColorPic-4', "#ac8b66", 'Фасад 2672', 'walls-2672')
@@ -45,7 +45,7 @@ mixin sColorPic(data)
 					+sColorPicRadio('sColorPic-3', "#30373a", 'Кровля RAL 7024', 'roof-3')
 					+sColorPicRadio('sColorPic-3', "#282224", 'Кровля RAL 8017', 'roof-4')
 					+sColorPicRadio('sColorPic-3', "#213820", 'Кровля RR-11', 'roof-5')
-				+sColorPicTabsContent('active')
+				+sColorPicTabsContent()
 					+sColorPicRadio('sColorPic-1', "#2c362e", 'Водосток зеленый')(checked)
 					+sColorPicRadio('sColorPic-1', "#3c322c", 'Водосток коричневый')
 					+sColorPicRadio('sColorPic-1', "#442425", 'Водосток красный')
